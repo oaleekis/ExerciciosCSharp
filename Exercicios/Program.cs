@@ -342,5 +342,36 @@ else if(x > 0 && y < 0)
 //de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com 
 //duas casas decimais
 
+/*
+Console.WriteLine("Informe o salário salário: ");
+decimal salario = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
+decimal imposto = 0.0m;
+if (salario >= 0.00m && salario <= 2000.00m)
+{
+    imposto = 0.0m;
+}
+else if (salario <= 3000.00m)
+{
+     imposto = (salario - 2000.00m) * 0.08m;
+}
+else if (salario <= 4500.00m)
+{
+    imposto = ((salario - 3000.00m) * 0.18m ) + (1000.00m * 0.08m);
+
+}
+else if (salario > 4500.00m)
+{
+    imposto = ((salario - 4500.00m) * 0.28m) + (1500.00m * 0.18m) + (1000.00m * 0.08m);
+
+}
+
+if (imposto == 0.0m )
+{
+    Console.WriteLine("Insento");
+}else
+{
+    Console.WriteLine($"R$ {imposto.ToString("F2", CultureInfo.InvariantCulture)}");
+}
+*/
 #endregion
