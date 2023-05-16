@@ -4,5 +4,7 @@ Cada exercicio foi separado em uma região para melhor organização, as questõ
 Os exercicios foram feitos seguindo uma cronologia de estudo e por esse motivo as entradas de dados não estão tratadas, ao entrar com dados de forma incorreta poderá ocasionar erros!
 
 Exercícios sobre Estrutura Sequencial (entrada, processamento, saída): 
+https://github.com/oaleekis/ExerciciosCSharp/blob/master/Utilidades/exercicios1-estrutura-sequencial.pdf
 
 Exercícios sobre Estrutura Condicional (if-else):
+https://github.com/oaleekis/ExerciciosCSharp/blob/master/Utilidades/exercicios2-estrutura-condicional.pdf
