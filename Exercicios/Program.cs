@@ -132,3 +132,7 @@ Console.WriteLine($"TRIANGULO: {triangulo.ToString("F3", CultureInfo.InvariantCu
     $"\nRETANGULO: {retangulo.ToString("F3", CultureInfo.InvariantCulture)}");
 */
 #endregion
+
+// Futuros Exercicios 
+
+Console.WriteLine("Olá Mundo!");
