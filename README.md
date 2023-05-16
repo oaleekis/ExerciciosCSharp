@@ -3,6 +3,8 @@
 Cada exercicio foi separado em uma região para melhor organização, as questões estão comentadas atraves de comentário por linha, as respostas estão comentadas atraves de blocos, para que rode cada questão é necessário descomentar o bloco da mesma.
 Os exercicios foram feitos seguindo uma cronologia de estudo e por esse motivo as entradas de dados não estão tratadas, ao entrar com dados de forma incorreta poderá ocasionar erros!
 
+Dentro das questões é informado o valor para considerar PI, porem optei por não criar uma variavel mas sim utilizar o metodo Math.PI, e assim obter uma melhor precisão dos resultados.
+
 Exercício 01 - Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma desses números com uma 
 mensagem explicativa, conforme exemplos.
 
