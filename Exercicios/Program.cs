@@ -342,102 +342,36 @@ else if(x > 0 && y < 0)
 //de 8% sobre R$ 1000.00 + 18% sobre R$ 2.00, o que resulta em R$ 80.36 no total. O valor deve ser impresso com 
 //duas casas decimais
 
-
-#endregion
-
-// Exercícios sobre Estrutura Repetitiva WHILE
-
-#region Ex - 01
-//Escreva um programa que repita a leitura de uma senha até que ela seja válida. Para cada leitura de senha
-//incorreta informada, escrever a mensagem "Senha Invalida". Quando a senha for informada corretamente deve ser
-//impressa a mensagem "Acesso Permitido" e o algoritmo encerrado. Considere que a senha correta é o valor 2002.
-
 /*
-int senha = 0;
+Console.WriteLine("Informe o salário salário: ");
+decimal salario = decimal.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-while (senha != 2002)
+decimal imposto = 0.0m;
+if (salario >= 0.00m && salario <= 2000.00m)
 {
-    Console.WriteLine("Informe a senha: ");
-    senha = int.Parse(Console.ReadLine());
-    if (senha != 2002)
-    {
-        Console.WriteLine("Senha invalida");
-    }
+    imposto = 0.0m;
+}
+else if (salario <= 3000.00m)
+{
+     imposto = (salario - 2000.00m) * 0.08m;
+}
+else if (salario <= 4500.00m)
+{
+    imposto = ((salario - 3000.00m) * 0.18m ) + (1000.00m * 0.08m);
+
+}
+else if (salario > 4500.00m)
+{
+    imposto = ((salario - 4500.00m) * 0.28m) + (1500.00m * 0.18m) + (1000.00m * 0.08m);
+
 }
 
-Console.WriteLine("Acesso permitido!");
-*/
-#endregion
-
-#region Ex - 02
-//Escreva um programa para ler as coordenadas (X,Y) de uma quantidade indeterminada de pontos no sistema
-//cartesiano.Para cada ponto escrever o quadrante a que ele pertence. O algoritmo será encerrado quando pelo
-//menos uma de duas coordenadas for NULA (nesta situação sem escrever mensagem alguma).
-
-/*
-Console.WriteLine("Informe os valores de x e y separados por espaço");
-string[] cordenadas = Console.ReadLine().Split(' '); 
-int x = int.Parse(cordenadas[0]);
-int y = int.Parse(cordenadas[1]);
-
-while (x != 0 && y != 0) 
+if (imposto == 0.0m )
 {
-    if (x > 0 && y > 0)
-    {
-        Console.WriteLine("primeiro");
-    }
-    else if (x < 0 && y > 0)
-    {
-        Console.WriteLine("segundo");
-    }
-    else if (x < 0 && y < 0)
-    {
-        Console.WriteLine("terceiro");
-    }
-    else
-    {
-        Console.WriteLine("quarto");
-    }
-    cordenadas = Console.ReadLine().Split(' ');
-    x = int.Parse(cordenadas[0]);
-    y = int.Parse(cordenadas[1]);
-}
-*/
-#endregion
-
-#region Ex - 03
-//Um Posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. Escreva 
-//um algoritmo para ler o tipo de combustível abastecido (codificado da seguinte forma: 1.Álcool 2.Gasolina 3.Diesel
-//4.Fim). Caso o usuário informe um código inválido (fora da faixa de 1 a 4) deve ser solicitado um novo código (até 
-//que seja válido). O programa será encerrado quando o código informado for o número 4. Deve ser escrito a 
-//mensagem: "MUITO OBRIGADO" e a quantidade de clientes que abasteceram cada tipo de combustível, conforme 
-//exemplo
-
-/*
-Console.WriteLine("Informe o tipo de combustível");
-int tipo = int.Parse(Console.ReadLine());
-
-int alcool = 0;
-int gasolina = 0;
-int diesel = 0;
-
-while (tipo !=4)
+    Console.WriteLine("Insento");
+}else
 {
-    if(tipo == 1)
-    {
-        alcool++;
-    } else if(tipo == 2)
-    {
-        gasolina++;
-    } else if(tipo == 3)
-    {
-        diesel++;
-    }
-
-    Console.WriteLine("Informe o tipo de combustível");
-    tipo = int.Parse(Console.ReadLine());
+    Console.WriteLine($"R$ {imposto.ToString("F2", CultureInfo.InvariantCulture)}");
 }
-
-Console.WriteLine($"MUITO OBRIGADO\nAlcool: {alcool}\r\nGasolina: {gasolina}\r\nDiesel: {diesel}");
 */
 #endregion
