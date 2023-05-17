@@ -623,6 +623,7 @@ for (int i = 1; i <= numero; i++)
 //começando de 1 até N. Para cada linha, mostrar o número da linha, depois o quadrado e o cubo do valor, conforme 
 //exemplo.
 
+/*
 Console.WriteLine("Informe um número inteiro: ");
 int numero = int.Parse(Console.ReadLine());
 
@@ -630,5 +631,5 @@ for (int i = 1; i <= numero; i++)
 {
     Console.WriteLine($"{i} {Math.Pow(i, 2)} {Math.Pow(i, 3)}");
 }
-
+*/
 #endregion
