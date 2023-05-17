@@ -472,3 +472,163 @@ while (tipo !=4)
 Console.WriteLine($"MUITO OBRIGADO\nAlcool: {alcool}\r\nGasolina: {gasolina}\r\nDiesel: {diesel}");
 */
 #endregion
+
+// Exercícios sobre Estrutura Repetitiva FOR
+
+#region Ex - 01
+//Leia um valor inteiro X (1 <= X <= 1000). Em seguida mostre os ímpares de 1 até X, um valor por linha, inclusive o 
+//X, se for o caso
+
+/*
+Console.WriteLine("Informe um número inteiro");
+int x = int.Parse(Console.ReadLine());
+
+for (int i = 0; i <= x; i++)
+{
+    if (i % 2 != 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+*/
+#endregion
+
+#region Ex - 02
+//Leia um valor inteiro N. Este valor será a quantidade de valores inteiros X que serão lidos em seguida.
+//Mostre quantos destes valores X estão dentro do intervalo [10,20] e quantos estão fora do intervalo, mostrando 
+//essas informações conforme exemplo (use a palavra "in" para dentro do intervalo, e "out" para fora do intervalo).
+
+/*
+Console.WriteLine("Informe quantos numeros você irá escolher: ");
+int n = int.Parse(Console.ReadLine());
+
+int dentro = 0;
+int fora = 0;
+
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine($"Informe o numero {i + 1}: ");
+    int valor = int.Parse(Console.ReadLine());
+
+    if(valor >= 10 && valor <= 20)
+    {
+        dentro++;
+    }
+    else 
+    { 
+        fora++; 
+    }
+
+}
+    Console.WriteLine($"{dentro} in\n{fora} out");
+*/
+#endregion
+
+#region Ex - 03
+//Leia 1 valor inteiro N, que representa o número de casos de teste que vem a seguir. Cada caso de teste consiste 
+//de 3 valores reais, cada um deles com uma casa decimal. Apresente a média ponderada para cada um destes 
+//conjuntos de 3 valores, sendo que o primeiro valor tem peso 2, o segundo valor tem peso 3 e o terceiro valor tem 
+//peso 5.
+
+/*
+Console.WriteLine("Número de casos de testes: ");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine($"Informe os Valores: ");
+    string[] valores = Console.ReadLine().Split(' ');
+    double valor1 = double.Parse(valores[0], CultureInfo.InvariantCulture);
+    double valor2 = double.Parse(valores[1], CultureInfo.InvariantCulture);
+    double valor3 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+    double media = ((valor1 * 2) + (valor2 * 3) + (valor3 * 5)) / 10.0;
+    Console.WriteLine(media.ToString("F1", CultureInfo.InvariantCulture));
+}
+*/
+#endregion
+
+#region Ex - 04
+//Fazer um programa para ler um número N. Depois leia N pares de números e mostre a divisão do primeiro pelo 
+//segundo.Se o denominador for igual a zero, mostrar a mensagem "divisao impossivel".
+
+/*
+Console.WriteLine("Número de testes: ");
+int n = int.Parse(Console.ReadLine());
+
+for (int i = 0; i < n; i++)
+{
+    Console.WriteLine("Infome um par de números: ");
+    string[] parNumeros = Console.ReadLine().Split(' ');
+    int num1 = int.Parse(parNumeros[0]);
+    int num2 = int.Parse(parNumeros[1]);
+
+    if(num2 == 0)
+    {
+        Console.WriteLine("Divisão impossivel");
+    }
+    else
+    {
+        double divisao = (double)num1 / num2;
+        Console.WriteLine(divisao.ToString("F1", CultureInfo.InvariantCulture));
+    }
+}
+*/
+#endregion
+
+#region Ex - 05
+//Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N * (N-1) * (N-2) * (N-3) * ... * 1.
+//Lembrando que, por definição, fatorial de 0 é 1.
+
+/*
+Console.WriteLine("Informe um valor: ");
+int valor = int.Parse(Console.ReadLine());
+int resultado = 1;
+
+if (valor == 0)
+{
+    resultado = 1;
+}
+else
+{
+    for (int i = 1; i <= valor; i++)
+    {
+        resultado *= i;
+    }
+}
+
+Console.WriteLine(resultado);
+*/
+#endregion
+
+#region Ex - 06
+//Ler um número inteiro N e calcular todos os seus divisores.
+
+/*
+Console.WriteLine("Informe um número: ");
+int numero = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= numero; i++)
+{
+    if (numero % i == 0)
+    {
+        Console.WriteLine(i);
+    }
+}
+*/
+#endregion
+
+#region Ex - 07
+//Fazer um programa para ler um número inteiro positivo N. O programa deve então mostrar na tela N linhas, 
+//começando de 1 até N. Para cada linha, mostrar o número da linha, depois o quadrado e o cubo do valor, conforme 
+//exemplo.
+
+Console.WriteLine("Informe um número inteiro: ");
+int numero = int.Parse(Console.ReadLine());
+
+for (int i = 1; i <= numero; i++)
+{
+    Console.WriteLine($"{i} {Math.Pow(i, 2)} {Math.Pow(i, 3)}");
+}
+
+#endregion
