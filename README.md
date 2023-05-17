@@ -8,3 +8,6 @@ https://github.com/oaleekis/ExerciciosCSharp/blob/master/Utilidades/exercicios1-
 
 Exercícios sobre Estrutura Condicional (if-else): </br>
 https://github.com/oaleekis/ExerciciosCSharp/blob/master/Utilidades/exercicios2-estrutura-condicional.pdf
+
+Exercícios sobre Estrutura Repetitiva While: </br>
+https://github.com/oaleekis/ExerciciosCSharp/blob/master/Utilidades/exercicios3-estrutura-while.pdf
